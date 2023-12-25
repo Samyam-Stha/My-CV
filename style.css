@@ -1,0 +1,75 @@
+
+  
+body{
+    
+    overflow: hidden;
+}
+
+.main{
+    display: flex;
+    flex-direction: column; 
+}
+
+
+
+
+header {
+   
+    box-shadow: 0px 0px 10px black;
+    
+  }
+  #head {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    color: white;
+    row-gap: 40px;
+    font-size: 23px;
+   
+  }
+ 
+  
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  .home {
+    cursor: pointer;
+    
+  }
+  .home::after {
+    margin: auto;
+    display: block;
+    content: "";
+    background: transparent;
+    height: 3px;
+    width: 0;
+    transition: width 0.2s ease-in-out, background 0.2s ease-in-out,
+      color 0.2s ease-in-out;
+  }
+  .home:hover::after {
+    width: 100%;
+    color: #4169e1;
+    background: #4169e1;
+  }
+  
+
+#firstPage {
+height: 100vh;
+  width: 100%;
+  background-color:red;
+}
+
+#secondPage {
+    height: 100vh;
+    width: 100%;
+    background-color:blue;
+  }
+#thirdPage {
+  height: 100vh;
+  width: 100%;
+  background-color:green;
+}
+  
